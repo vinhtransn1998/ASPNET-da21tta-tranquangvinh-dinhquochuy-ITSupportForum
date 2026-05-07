@@ -5,5 +5,6 @@ namespace ITSupportForum.Data
 {
     public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : IdentityDbContext(options)
     {
+    public DbSet<ITSupportForum.Models.Post> Post { get; set; } = default!;
     }
 }
